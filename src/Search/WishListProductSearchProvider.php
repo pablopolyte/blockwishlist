@@ -201,8 +201,7 @@ class WishListProductSearchProvider implements ProductSearchProviderInterface
 
         $count = (int) $this->db->getValue($sql);
 
-        dump($count);
-        die;
+
         $result = new ProductSearchResult();
         $result->setProducts($products);
         $result->setTotalProductsCount($count);
