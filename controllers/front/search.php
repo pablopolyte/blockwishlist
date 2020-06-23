@@ -61,6 +61,7 @@ class BlockWishlistSearchModuleFrontController extends ProductListingFrontContro
     public function init()
     {
         $id_wishlist = (int) Tools::getValue('id_wishlist');
+        $id_wishlist = 16;
         $this->wishlist = new WishList($id_wishlist);
 
         if (false === Validate::isLoadedObject($this->wishlist)) {
